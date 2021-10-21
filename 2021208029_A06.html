@@ -22,30 +22,52 @@
         <ul>
             <h2>개인정보</h2>
             <li>
-                이름
+                이름 <input type="text">
             </li>
             <li>
-                연락처
+                연락처 <input type="text">
             </li>
             <li>
                 학과
+                <select>
+                    <optgroup label="공과대학">
+                        <option value="cse">컴퓨터공학과</option>
+                        <option value="arche">건축공학과</option>
+                        <option value="cheme">화학공학과</option>
+                        <option value="elec">전기공학과</option>
+                    </optgroup>
+                    <optgroup label="인문대학">
+                        <option value="kor">국어국문학과</option>
+                        <option value="eng">영어영문학과</option>
+                        <option value="jpn">일어일문학과</option>
+                        <option value="chn">중어중문학과</option>
+                    </optgroup>
+                    <optgroup label="자연과학대학">
+                        <option value="math">수학과</option>
+                        <option value="phys">물리학과</option>
+                        <option value="chem">화학과</option>
+                        <option value="bio">생물학과</option>
+                    </optgroup>
+                </select>
             </li>
         </ul>
         <ul>
             <h2>지원 분야</h2>
             <li>
-                웹 퍼블리싱
+                <input type="radio" name="type" value="pub"> 웹 퍼블리싱
             </li>
             <li>
-                웹 어플리케이션
+                <input type="radio" name="type" value="app"> 웹 어플리케이션
             </li>
             <li>
-                웹 개발 지원
+                <input type="radio" name="type" value="dev"> 웹 개발 지원
             </li>
         </ul>
         <ul>
             <h2>지원 동기</h2>
-            <li></li>
+            <textarea rows="10" cols="50">지원동기를 작성해주세요.</textarea><br>
+            <input type="submit" value="접수하기">
+            <input type="reset" value="다시작성">
         </ul>
     </fieldset>
 </body>
